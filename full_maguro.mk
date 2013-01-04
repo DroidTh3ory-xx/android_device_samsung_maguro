@@ -35,5 +35,9 @@ $(call inherit-product, device/samsung/maguro/device.mk)
 PRODUCT_NAME := full_maguro
 PRODUCT_DEVICE := maguro
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full AOSP on Maguro
-PRODUCT_RESTRICT_VENDOR_FILES := true
+PRODUCT_MODEL := Galaxy Nexus
+PRODUCT_RESTRICT_VENDOR_FILES := false
+
+
+#Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=takju BUILD_FINGERPRINT="google/takju/maguro:4.2.1/JOP40D/533553:user/release-keys" PRIVATE_BUILD_DESC="takju-user 4.2.1 JOP40D 533553 release-keys"
